@@ -9,6 +9,11 @@ export default class GifSearch from Component{
     }
   }
 
+  formSubmit = e => {
+    e.preventDefault();
+    this.props.onSubmit(this.state.query)
+  }
+
   render(){
     return(
       <div>
