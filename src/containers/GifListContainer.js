@@ -11,11 +11,7 @@ export default class GifListContainer extends Component{
   }
 
   componentDidMount(){
-    fetch('http://api.giphy.com/v1/gifs/search?q=${query}&api_key=dc6zaTOxFJmzC&rating=g')
-    .then(res => res.json())
-    .then(data => this.setState({
-      gifs: data.gifs[0..2]
-    }))
+    this.handleSubmit()
   }
 
   handleSubmit = (query = 'dolphins') => {
