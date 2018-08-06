@@ -5,6 +5,7 @@ export default class GifList extends React.Component{
   render(){
     return(
       <ul>
+        {gifs}
       </ul>
     )
   }
