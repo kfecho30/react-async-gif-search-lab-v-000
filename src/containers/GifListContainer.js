@@ -20,6 +20,7 @@ export default class GifListContainer extends Component{
     return(
       <div>
         <GifList gifs={this.state.gifs} />
+        <GifSearch />
       </div>
     )
   }
