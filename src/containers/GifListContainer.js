@@ -7,4 +7,12 @@ export default class GifListContainer extends Component{
       gifs: []
     }
   }
+
+  render(){
+    return(
+      <div>
+      </div>
+    )
+  }
+
 }
