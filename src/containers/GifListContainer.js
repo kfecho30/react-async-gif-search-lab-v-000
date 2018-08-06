@@ -11,6 +11,7 @@ export default class GifListContainer extends Component{
   render(){
     return(
       <div>
+        <GifList gifs={this.state.gifs}
       </div>
     )
   }
