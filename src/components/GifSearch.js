@@ -8,4 +8,15 @@ export default class GifSearch from Component{
       query:''
     }
   }
+
+  render(){
+    return(
+      <div>
+        <form onSubmit={this.formSubmit}>
+          <input type="text" value={this.state.query} onChange={e => this.setState({query: e.target.value})} />
+          <input type="submit">
+        </form>
+      </div>
+    )
+  }
 }
